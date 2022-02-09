@@ -1,16 +1,15 @@
 <template>
     <div>
-        <img v-if="showBackdrop" style="position: absolute; height: 100vh; width: 100%; object-fit: cover;" data-async-image="true" :src="BackdropImage" alt="backdrop" decoding="async" class="">
-        <div :class="backdropClass">
-            <div class="container" style="z-index: 100;">
-                <div style="">
-                    <div class="row py-5">
-                        <div class="col-md-4 mb-4">
-                            <search-area @search-loading="setLoading($event)" @movie-searched="setMovie($event)"></search-area>
-                        </div>
-                        <div class="col-md-8">
-                            <search-landing :MovieData="MovieData" :loading="loading"></search-landing>
-                        </div>
+        <img v-if="showBackdrop" style="position: fixed; height: 100vh; width: 100%; object-fit: cover;" data-async-image="true" :src="BackdropImage" alt="backdrop" decoding="async" class="">
+        <div :class="backdropClass"></div>
+        <div class="container" style="z-index: 100;">
+            <div style="">
+                <div class="row py-5">
+                    <div class="col-md-4 mb-4">
+                        <search-area @search-loading="setLoading($event)" @movie-searched="setMovie($event)"></search-area>
+                    </div>
+                    <div class="col-md-8">
+                        <search-landing :MovieData="MovieData" :loading="loading"></search-landing>
                     </div>
                 </div>
             </div>
@@ -68,8 +67,8 @@ export default {
 
 <style>
 .movie_backdrop {
-  z-index: 3;
-  position: absolute;
+  z-index: 0;
+  position: fixed;
   top: 0px;
   width: 100%;
   height: 100%;

@@ -29,7 +29,8 @@
                                 </ul>
                                 <div class="tab-content p-3" style="border: 1px solid #dee2e6; border-top:none;">
                                     <div class="tab-pane fade show active" id="movie_details" role="tabpanel" aria-labelledby="deatils-tab">
-                                        <p class="small text-muted">Released: {{MovieData.release_date}}</p>
+                                        <p class="small text-muted mb-1">Released: {{MovieData.release_date}}</p>
+                                        <p class="small text-muted">Runtime: {{MovieData.runtime}}</p>
                                         <p>{{MovieData.overview}}</p>
                                     </div>
                                     <div class="tab-pane fade" id="cast_details" role="tabpanel" aria-labelledby="cast-tab" v-if="showCast">
