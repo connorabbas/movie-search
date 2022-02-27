@@ -6,13 +6,8 @@
 
 {{-- Content starts --}}
 @section('content')
-<div id="app" style="">
-    <main-app></main-app>
-</div>
-{{-- <div class="container">
-    <div id="app" class="my-5">
+    <div id="app" style="">
         <main-app></main-app>
     </div>
-</div> --}}
-<script src="{{ mix('js/app.js') }}"></script>
+    <script src="{{ mix('js/app.js') }}"></script>
 @endsection
