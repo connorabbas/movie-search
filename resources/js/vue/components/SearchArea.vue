@@ -27,7 +27,7 @@ export default {
                 if (this.canSearch) {
                     this.canSearch = false;
                     this.$emit('search-loading', 1);
-                    axios.get('/api/search-movies', {
+                    axios.get('/search-movies', {
                         params: {
                             title: this.SearchBind,
                         }

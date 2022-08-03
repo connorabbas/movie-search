@@ -12,15 +12,6 @@
 
     </head>
     <body class="bg-light" style="position: relative; height: 100vh;">
-        
-        {{-- <nav class="navbar navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand">Movie Search</a>
-                <div class="d-flex">
-                    <a href="text-light text-muted"><i class="bi bi-github"></i></a>
-                </div>
-            </div>
-        </nav> --}}
 
         @yield('content')
 
