@@ -4,11 +4,12 @@
         <div :class="backdropClass"></div>
         <div class="container" style="z-index: 100;">
             <div style="">
-                <div class="row py-5">
-                    <div class="col-md-4 mb-4">
+                <div class="row py-5 justify-content-center">
+                    <!-- <div class="col-md-4 mb-4">
                         <search-area @search-loading="setLoading($event)" @movie-searched="setMovie($event)"></search-area>
-                    </div>
+                    </div> -->
                     <div class="col-md-8">
+                        <search-area @search-loading="setLoading($event)" @movie-searched="setMovie($event)"></search-area>
                         <search-landing :MovieData="MovieData" :loading="loading"></search-landing>
                     </div>
                 </div>
