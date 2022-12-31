@@ -27,7 +27,7 @@
                                         <button class="nav-link" id="cast-tab" data-bs-toggle="tab" data-bs-target="#cast_details" type="button" role="tab" aria-controls="cast_details" aria-selected="false">Cast</button>
                                     </li>
                                 </ul>
-                                <div class="tab-content p-3" style="border: 1px solid #dee2e6; border-top:none;">
+                                <div class="tab-content p-3 border border-top-0" style="">
                                     <div class="tab-pane fade show active" id="movie_details" role="tabpanel" aria-labelledby="deatils-tab">
                                         <p class="small text-muted mb-1">Released: {{MovieData.release_date}}</p>
                                         <p class="small text-muted">Runtime: {{MovieData.runtime}}</p>

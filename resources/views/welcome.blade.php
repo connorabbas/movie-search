@@ -1,3 +1,7 @@
+@section('title')
+    Movie Search
+@endsection
+
 {{-- extend the main layout --}}
 @extends('layouts.main')
 
